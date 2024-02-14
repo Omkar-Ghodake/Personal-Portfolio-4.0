@@ -1,15 +1,79 @@
 import React from 'react'
 
-import { MdOutlineWorkHistory } from 'react-icons/md'
-import { CgWorkAlt } from 'react-icons/cg'
-import { FaReact } from 'react-icons/fa'
-import { LiaSchoolSolid } from 'react-icons/lia'
 import { BiSolidSchool } from 'react-icons/bi'
+import { CgWorkAlt } from 'react-icons/cg'
+import { LiaSchoolSolid } from 'react-icons/lia'
 import { LuGraduationCap } from 'react-icons/lu'
+import { MdOutlineWorkHistory } from 'react-icons/md'
 
-import spryDEXImg from '@/public/spryDEX/spryDEXImg.png'
-import rmtdevImg from '@/public/rmtdev.png'
-import wordanalyticsImg from '@/public/wordanalytics.png'
+// project images
+// #1
+import spryDEXsub3 from '@/public/projects/spryDEX/crypto_data_table.png'
+import spryDEXsub14 from '@/public/projects/spryDEX/crypto_panel_sm.png'
+import spryDEXsub4 from '@/public/projects/spryDEX/dex_buy.png'
+import spryDEXsub5 from '@/public/projects/spryDEX/dex_sell.png'
+import spryDEXsub6 from '@/public/projects/spryDEX/dex_txn_success.png'
+import spryDEXMain from '@/public/projects/spryDEX/main.png'
+import spryDEXsub1 from '@/public/projects/spryDEX/news_lg_1.png'
+import spryDEXsub2 from '@/public/projects/spryDEX/news_lg_2.png'
+import spryDEXsub15 from '@/public/projects/spryDEX/news_sm.png'
+import spryDEXsub12 from '@/public/projects/spryDEX/profile_acc_settings.png'
+import spryDEXsub11 from '@/public/projects/spryDEX/profile_personal.png'
+import spryDEXsub13 from '@/public/projects/spryDEX/profile_social.png'
+import spryDEXsub10 from '@/public/projects/spryDEX/txn_history.png'
+import spryDEXsub8 from '@/public/projects/spryDEX/txn_inprocess_mm.png'
+import spryDEXsub9 from '@/public/projects/spryDEX/txn_success.png'
+import spryDEXsub7 from '@/public/projects/spryDEX/wallet-to-wallet.png'
+// #2
+import lotteryMain from '@/public/projects/LotteryContract/main.png'
+// #3
+import eComMain from '@/public/projects/Ecom/main.png'
+import eComSub1 from '@/public/projects/Ecom/sub1.png'
+import eComSub10 from '@/public/projects/Ecom/sub10.png'
+import eComSub11 from '@/public/projects/Ecom/sub11.png'
+import eComSub12 from '@/public/projects/Ecom/sub12.png'
+import eComSub2 from '@/public/projects/Ecom/sub2.png'
+import eComSub3 from '@/public/projects/Ecom/sub3.png'
+import eComSub4 from '@/public/projects/Ecom/sub4.png'
+import eComSub5 from '@/public/projects/Ecom/sub5.png'
+import eComSub6 from '@/public/projects/Ecom/sub6.png'
+import eComSub7 from '@/public/projects/Ecom/sub7.png'
+import eComSub8 from '@/public/projects/Ecom/sub8.png'
+import eComSub9 from '@/public/projects/Ecom/sub9.png'
+// #4
+import codeswearMain from '@/public/projects/Codeswear/main.png'
+import codeswearSub1 from '@/public/projects/Codeswear/sub1.png'
+import codeswearSub2 from '@/public/projects/Codeswear/sub2.png'
+import codeswearSub3 from '@/public/projects/Codeswear/sub3.png'
+// #5
+import cryptoTrackerMain from '@/public/projects/CryptoTracker/main.png'
+import cryptoTrackerSub1 from '@/public/projects/CryptoTracker/sub1.png'
+// #6
+import yourNotebookMain from '@/public/projects/yourNotebook/main.png'
+import yourNotebookSub1 from '@/public/projects/yourNotebook/sub1.png'
+import yourNotebookSub2 from '@/public/projects/yourNotebook/sub2.png'
+import yourNotebookSub3 from '@/public/projects/yourNotebook/sub3.png'
+import yourNotebookSub4 from '@/public/projects/yourNotebook/sub4.png'
+// #7
+import lostRealmsMain from '@/public/projects/LostRealms/main.png'
+import lostRealmsSub1 from '@/public/projects/LostRealms/sub1.png'
+import lostRealmsSub2 from '@/public/projects/LostRealms/sub2.png'
+import lostRealmsSub3 from '@/public/projects/LostRealms/sub3.png'
+// #8
+import newsMonkeyMain from '@/public/projects/NewsMonkey/main.png'
+import newsMonkeySub1 from '@/public/projects/NewsMonkey/sub1.png'
+import newsMonkeySub2 from '@/public/projects/NewsMonkey/sub2.png'
+import newsMonkeySub3 from '@/public/projects/NewsMonkey/sub3.png'
+// #9
+import textUtilitiesMain from '@/public/projects/TextUtilities/main.png'
+import textUtilitiesSub1 from '@/public/projects/TextUtilities/sub1.png'
+import textUtilitiesSub2 from '@/public/projects/TextUtilities/sub2.png'
+import textUtilitiesSub3 from '@/public/projects/TextUtilities/sub3.png'
+import textUtilitiesSub4 from '@/public/projects/TextUtilities/sub4.png'
+import textUtilitiesSub5 from '@/public/projects/TextUtilities/sub5.png'
+import textUtilitiesSub6 from '@/public/projects/TextUtilities/sub6.png'
+import textUtilitiesSub7 from '@/public/projects/TextUtilities/sub7.png'
+import textUtilitiesSub8 from '@/public/projects/TextUtilities/sub8.png'
 
 export const links = [
   {
@@ -113,7 +177,24 @@ export const projectsData = [
       'Metamask',
       'Ganache',
     ],
-    imageUrls: [spryDEXImg],
+    imageUrls: [
+      spryDEXMain,
+      spryDEXsub1,
+      spryDEXsub2,
+      spryDEXsub3,
+      spryDEXsub4,
+      spryDEXsub5,
+      spryDEXsub6,
+      spryDEXsub7,
+      spryDEXsub8,
+      spryDEXsub9,
+      spryDEXsub10,
+      spryDEXsub11,
+      spryDEXsub12,
+      spryDEXsub13,
+      spryDEXsub14,
+      spryDEXsub15,
+    ],
   },
   {
     index: '1',
@@ -131,22 +212,36 @@ export const projectsData = [
       'Mocha',
       'Ganache',
     ],
-    imageUrls: [spryDEXImg],
+    imageUrls: [lotteryMain],
   },
   {
     index: '2',
-    title: 'Buy It',
+    title: 'e.Com',
     description:
-      "\"Buy It\" is an Ecommerce website mainly focused on services offered and it functionalities such as 'Single Session Login', 'Role based Access Control', etc",
+      "\"e.Com\" is an Ecommerce website mainly focused on services offered and it functionalities such as 'Single Session Login', 'Role based Access Control', etc",
     tags: ['React', 'Tailwind', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose'],
-    imageUrls: [spryDEXImg],
+    imageUrls: [
+      eComMain,
+      eComSub1,
+      eComSub2,
+      eComSub3,
+      eComSub4,
+      eComSub5,
+      eComSub6,
+      eComSub7,
+      eComSub8,
+      eComSub9,
+      eComSub10,
+      eComSub11,
+      eComSub12,
+    ],
   },
   {
     index: '3',
     title: 'Codeswear',
     description: '"Codeswear" is an Ecommerce website mainly focused on UI/UX',
     tags: ['React', 'Next.js', 'Context API', 'Tailwind'],
-    imageUrls: [spryDEXImg],
+    imageUrls: [codeswearMain, codeswearSub1, codeswearSub2, codeswearSub3],
   },
   {
     index: '4',
@@ -154,7 +249,7 @@ export const projectsData = [
     description:
       'An API based web application which provides live cryptocurrencies data (using axios - react.js)',
     tags: ['React', 'Axios', 'API'],
-    imageUrls: [rmtdevImg],
+    imageUrls: [cryptoTrackerMain, cryptoTrackerSub1],
   },
   {
     index: '5',
@@ -171,21 +266,27 @@ export const projectsData = [
       'MongoDB',
       'Mongoose',
     ],
-    imageUrls: [wordanalyticsImg],
+    imageUrls: [
+      yourNotebookMain,
+      yourNotebookSub1,
+      yourNotebookSub2,
+      yourNotebookSub3,
+      yourNotebookSub4,
+    ],
   },
   {
     index: '6',
-    title: 'In the Bleak Midwinter',
+    title: 'Lost Realms',
     description: 'A Platform Game created using HTML Canvas',
     tags: ['React', 'HTML', 'CSS', 'TailwindCSS', 'HTML Canvas', 'JavaScript'],
-    imageUrls: [wordanalyticsImg],
+    imageUrls: [lostRealmsMain, lostRealmsSub1, lostRealmsSub2, lostRealmsSub3],
   },
   {
     index: '7',
     title: 'News Monkey',
     description: 'API based news app which provides the latest real-time news.',
     tags: ['React', 'HTML', 'CSS', 'Bootstrap', 'API'],
-    imageUrls: [wordanalyticsImg],
+    imageUrls: [newsMonkeyMain, newsMonkeySub1, newsMonkeySub2, newsMonkeySub3],
   },
   {
     index: '8',
@@ -193,7 +294,17 @@ export const projectsData = [
     description:
       'Text Utilities is an app which provides various utilities for your text. User can perform various operations such as convert text to lowercase or uppercase, count the number of characters and words and many more functions.',
     tags: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    imageUrls: [wordanalyticsImg],
+    imageUrls: [
+      textUtilitiesMain,
+      textUtilitiesSub1,
+      textUtilitiesSub2,
+      textUtilitiesSub3,
+      textUtilitiesSub4,
+      textUtilitiesSub5,
+      textUtilitiesSub6,
+      textUtilitiesSub7,
+      textUtilitiesSub8,
+    ],
   },
 ] as const
 
